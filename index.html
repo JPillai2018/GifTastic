@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Gif Search
+        </title>
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/gifimage.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" > 
+        <script src="assets/javascript/game.js"></script>
+        <!-- Google fonts selections    1. (CSS= font-family: 'Frank Ruhl Libre', serif;) 2. (CSS=font-family: 'Frank Ruhl Libre', serif;
+        font-family: 'BenchNine', sans-serif; 3. (CSS=font-family: 'Frank Ruhl Libre', serif;
+        font-family: 'BenchNine', sans-serif;
+        font-family: 'Sorts Mill Goudy', serif;-->
+        <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=BenchNine|Frank+Ruhl+Libre" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=BenchNine|Frank+Ruhl+Libre|Sorts+Mill+Goudy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Enriqueta|Istok+Web|Quattrocento|Taviraj" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    </head>
+    <!-- <body onload="initialload()"> -->
+    <body >
+        <div class="headerbackground">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container-fluid">
+                          <!-- Brand and toggle get grouped for better mobile display -->
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+
+                            <a class="navbar-brand" href="http://www.funtrivia.com/" target="_blank">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true">MyGIFs</span>
+                            </a>
+                        </div>
+                </nav>
+        </div>
+        <div class="jumbotron">
+                <h1 class="display-h1">Giphy Search</h1>
+                <div class="jumbo-theme">
+                        <hr class="my-4" >
+                        <h3 class="display-h2"></h3>
+                        <div class="col-md-12 side-bar timetable">
+                                <div class="col-md-9 side-bar buttonGroup">
+                                        <div id="button-gifs" class="buttongifs">
+                                        </div>
+                                </div>
+                                <div class="col-md-3 side-bar buttonSearch">
+                                        <form>                                            
+                                                <input type="textbox" id="stsearchinput" class="st-search-input search-field" />
+                                                <!-- <button id="btnSearch" class="btn btn-lg btn-primary" type="button">Submit</button> -->
+                                                <input type="button" id="btnSearch" class="btn btn-lg btn-primary" value="Submit" />
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+            <br> <br>
+        </div>
+        <br>
+        <br>
+        <!-- Main Body of the Page-->
+        <div class="container">
+                <hr>
+                <div id="images" class="col-md-12 side-bar statustable">
+                        <div id="image_Giff" class="imageGiff">
+                        </div>
+                  </div>
+        </div>
+
+        <footer class="footer position-sticky">
+                <div class="container">
+                  <span >Copyright &copy;.</span>
+                </div>
+        </footer>  
+
+    </body>
+</html>        
