@@ -173,7 +173,12 @@ body{
     font-size: 2ch;
 
   }
-
+  #checked{
+    margin-left: 35px;
+    width: 100px;
+    color: gold;
+    background-color: rgb(8, 8, 8);
+  }
   .buttongifs{
     float: left;
     }
@@ -198,6 +203,10 @@ body{
       float: left;
       width: 480;
       height: 480;
+      margin: 1px;
+      padding: 1px;
+      border: rgb(0, 255, 106);
+
   }
   .buttongroup{
       align-items: left;

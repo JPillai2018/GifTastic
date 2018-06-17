@@ -113,8 +113,13 @@
             
             // Following variable is to create unique image div id.
             var k = 1;     
-            //Clearing the array before loading a new search result
-            $(".imageGiff").empty();
+
+            //Clearing the array before loading a new search result,only if "More topic?" is not checked
+            var moretopic = $("#moretopic").is(':checked');
+            console.log("More Topic= " + moretopic);
+            if(moretopic == false){
+                $(".imageGiff").empty();
+            }
 
             //Loading all images to the div
             for (var j=0; j < result.length; j=j+4){
