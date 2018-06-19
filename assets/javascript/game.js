@@ -6,7 +6,7 @@
         $(".footer").css("visibility", "visible");
         var i=0;
         // We are setting an array to start with. More items (buttons) can be added to the array.
-        var buttonArray = ['Cat', 'Dog', 'Tiger', 'Bear', 'Wolf', 'Elephant', 'Leopard', 'Deer', 'Giraffe'];
+        var buttonArray = ['Bear', 'Cat', 'Deer', 'Dog', 'Elephant', 'Giraffe', 'Leopard', 'Tiger', 'Wolf' ];
         var imageArray = ['img1', 'img2', 'img3'];
 
         // Initial Load function creates buttons from the array.
