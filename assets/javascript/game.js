@@ -48,10 +48,6 @@
                 initialButtonLoad();
                 console.log("Sorted Array = " + compareArray);
                 console.log("Search String=" + searchstring);
-                // Commenting out the following code since buttons added had to be sorted
-                // var bt  = $('<input id="buttonGif" name="searchstring" value="' + searchstring + '" type="text" class="btn btn-lg btn-primary pull-left"  />').on("click", giffSearch);
-                // $("#button-gifs").append(bt);
-                // $("#stsearchinput").val("");
             }
         }
 
@@ -103,6 +99,8 @@
                   imageArray.push(imageItem);
                   imageItem = response.data[j].images.fixed_height.url;
                   imageArray.push(imageItem);
+                  imageItem = (response.data[j].title).toUpperCase();
+                  imageArray.push(imageItem);
                   imageItem = (response.data[j].rating).toUpperCase();
                   imageArray.push(imageItem);
               };
@@ -122,7 +120,7 @@
             }
 
             //Loading all images to the div
-            for (var j=0; j < result.length; j=j+4){
+            for (var j=0; j < result.length; j=j+5){
                 var itm = "item" + k;
                 k++;
                 var giffy = $("<div class='imgitm' id='" + itm + "'>");
@@ -139,9 +137,11 @@
                 personImage.attr({"data-animate": result[j+2] });
                 personImage.attr({"class": "gif" });
                 personImage.attr({"data-state": "still" });
-                var p = $("<p>").text("Rating: " + result[j+3]);
-                $("#rating").text("Rating: " + result[j+3]);
-                $(giffy).html(p);
+                var pt = $("<p>").text("Title: " + result[j+3].replace("GIF", ""));
+                var pr = $("<p>").text("Rating: " + result[j+4]);
+                $("#title").text("Rating: " + result[j+3]);
+                $(giffy).html(pt);
+                $(giffy).append(pr);
                 $(giffy).append(personImage);
             }
             });
